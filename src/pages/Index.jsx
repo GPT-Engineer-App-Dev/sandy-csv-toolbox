@@ -1,12 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="text-3xl">Your Blank Canvas</h1>
-        <p>Chat with the agent to start making edits.</p>
-      </div>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <h1 className="text-4xl font-bold mb-6">Welcome to CSV Editor</h1>
+      <p className="text-xl mb-8">Edit your CSV files with ease</p>
+      <Link to="/csv-editor">
+        <Button size="lg">
+          Go to CSV Editor
+        </Button>
+      </Link>
     </div>
   );
 };
